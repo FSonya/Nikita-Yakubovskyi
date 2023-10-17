@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	float cof;
+	float paskal;
+	float MRS;
+	int change;
+	cof = 133.322;
+	/*cout << "Enter Paskal' " << endl;
+	cin >> paskal;
+
+	MRS = paskal / cof;
+	cout << "MRS= " << MRS << endl;*/
+	
+
+	
+	cout<<"Enter 1 for Paskal'-MRS \n Enter 2 for MRS-Paskal'"<< endl;
+	cin>> change;
+	if(change==1)
+	{
+	cout << "Enter Paskal' " << endl;
+	cin >> paskal;
+	MRS = paskal / cof;
+	cout<<"MRS="<< MRS<< endl;
+	}
+	else
+	{
+	cout << "Enter MRS " << endl;
+	cin >> MRS;
+	paskal = MRS * cof;
+	cout<<"Paskal'="<< paskal<< endl;
+	}
+	return 0;
+}
